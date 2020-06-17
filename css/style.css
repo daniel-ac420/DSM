@@ -1,0 +1,824 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*  ---Шапка сайта---  */
+
+/* ---Верхняя часть---*/
+
+.header {
+    background-image: linear-gradient(143deg, rgba(0,184,212,0.9) 0%, rgba(29,233,182,0.9) 100%), url(../images/backgrounds/header-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-transform: uppercase;
+    height: 750px;
+    z-index: 1;
+}
+
+.header-gradient-turquoise {
+   
+    /* --- gradient  wuz  here --- */
+    
+    height: 750px;
+    z-index: 2;
+}
+
+.upper-header > div,
+.upper-footer > div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.company-logo::before {
+    content:  '';
+    background-image: url(../images/dart-company-logo.png);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.company-logo span {
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.company-logo {
+    width: 200px;
+}
+
+
+.navigation {
+    font-weight: 600;
+    list-style-type: none;
+    position: relative;
+    /*
+    left: 10px;
+    */
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: #061e37;
+}
+
+.sign-up {
+    color: #fff;
+    font-size: 12px;
+    text-transform: lowercase;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 6px 20px;
+    align-self: center;
+}
+
+
+/* ---Средняя часть---*/
+
+    /* ---Левая половина---*/
+
+.middle-header {
+    position: relative;
+    bottom: 500px;
+}
+
+.middle-header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 65px;
+    max-width: 475px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+h1 + p {
+    max-width: 590px;
+    font-size: 18px;
+    line-height: 35px;
+    text-transform: none;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.middle-header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    padding-top: 22px;
+}
+
+#buy {
+    background-color: #061e37;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 150px;
+    height: 55px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+#try {
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 150px;
+    height: 55px;
+    color: #061e37;
+}
+
+    /* ---Правая половина---*/
+
+video {
+    width: 600px;
+    height: 320px;
+    border: 1px solid #061e37;
+    border-radius: 5px;
+    box-sizing: content-box;
+    z-index: 1;
+}
+
+.video-preview-haze {
+  background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+  opacity: 0.902;
+  z-index: 10;
+}
+
+.play-bttn-base {
+  border-radius: 5px;
+  background-color: rgb(6, 30, 55);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 1190px;
+  top: 360px;
+  width: 60px;
+  height: 60px;
+  z-index: 32;
+}
+
+
+/*  ---Контент---  */
+
+    /* ---easy & usefull--- */
+
+.useful_description {
+    text-align: center; 
+}
+
+h2,
+h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 45px;
+    color: #061e37;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 25px;
+    color: #b0bec5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.useful_description p, 
+.services p,
+.our_team_block p {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 95px;
+    width: 565px;
+    line-height: 25px;
+    color: #b0bec5;
+}
+
+.useful_samples {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.useful_samples > div {
+    text-align: center;
+    max-width: 370px;
+}
+
+.icofont {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.icofont-tasks-alt {
+    color: #b388ff;
+}
+
+.icofont-team {
+    color: #80d8ff;
+}
+
+.icofont-worker {
+    color: #ea80fc;
+}
+
+.useful_samples h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #061e37;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.useful_samples h4 + p {
+    color: #78909c;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.get_started_bttn {
+    text-align: center;
+    background-color: #1de9b6;
+    text-transform: uppercase;
+    width: 150px;
+    height: 55px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    font-weight: 700;
+    line-height: 55px;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.get_started_bttn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.usefull {
+    text-align: center;  /* для центрирования inine-block 'get started' */
+}
+
+
+
+    /* --- indications ---*/
+
+.indications_line {
+    height: 150px;
+/*    background-color: #80d8ff; */
+    margin: 0 auto;
+}
+
+.indications_line {
+    display: flex;
+    justify-content: center;
+}
+
+.white_round {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+span.material-icons {
+    font-size: 30px;
+    position: relative;
+    top: 15px;
+    right: 45px;
+}
+
+.indication > div {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    padding-top: 45px;
+    position: relative;
+    left: 100px;
+}
+
+.indication p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    max-width: 120px;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+#business {
+    color: #80d8ff;
+    background-color: #80d8ff;
+}
+
+#downloads {
+    color: #82b1ff;
+    background-color: #82b1ff;
+}
+
+#installs {
+    color: #b388ff;
+    background-color: #b388ff;
+}
+
+#users {
+    color: #ea80fc;
+    background-color: #ea80fc;
+}
+
+
+
+.indications_line > div:first-child, 
+.indications_line > div:last-child {
+    width: auto;
+}
+
+
+/*
+.indication.blue, .indication.purple {
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+
+.indication.blue {
+    background-color: #80d8ff;
+    
+}
+
+.indication.purple {
+    background-color: #ea80fc;  
+}
+
+
+
+.indication_blue {
+    height: 150px;
+    background-color: #80d8ff;
+    position: relative;
+    top: 100px;
+    display: block;
+    width: 1000px;
+}
+
+*/
+
+
+    /* --- services --- */
+
+.services {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.services_sections {
+    width: 800px;
+    height: 50px;
+    color: #061e37;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+    
+    /* border: 1px solid red; */
+}
+
+div#statistics {
+    height: 240px;
+}
+
+.services_sections_header {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 15px;
+    margin-bottom: 35px;
+}
+
+.services_sections_header div:nth-child(2) {
+    position: relative;
+    left: 25px;
+    top: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    /* --- для выравнивания стрелок по правому краю --- */
+    width: 800px;
+    text-align: left;
+}
+
+div.services_signs {
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+div.services_arrows {
+    font-size: 25px;
+    position: relative;
+    bottom: 3px;
+    right: 17px;
+}
+
+.services_sections_header a {
+    text-decoration: none;
+    color: #061e37;
+}
+
+.services_content img {
+    float: left;
+    margin-left: 25px;
+}
+
+.services p {
+    margin-bottom: 50px;  /* --- уточнение margin-bottom p после заголовка --- */
+}
+
+.services_content p {
+    max-width: 475px;
+    color: #061e37;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+/* --- Customers Reviews --- */
+
+
+.customers_reviews {
+    background-image: linear-gradient( 143deg, rgba(0,184,212,0.9) 0%, rgba(29,233,182,0.9) 100%), url(../images/customers_reviews/customers_reviews_banner.png);
+    height: 564px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    z-index: 0;
+    margin-top: 80px;
+}
+
+.customers_reviews .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- левая половина --- */
+
+.reviews_left_half {
+    max-width: 520px;
+    font-weight: 600;
+}
+
+.customers_reviews h2 {
+    color: #fff;
+    text-transform: none;
+    margin-top: 134px;
+    margin-bottom: 0;
+}
+
+.customers_reviews p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.reviews_bttn {
+    color: ;
+    background-color: #061e37;
+    margin-top: 80px;
+}
+
+
+/* --- правая половина --- */
+
+
+.reviews_right_half {
+    
+}
+
+.review {
+    display: flex;
+    
+}
+
+.review img {
+    height: 60px;
+    position: relative;
+    top: 50px;
+}
+
+.review div {
+    width: 650px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 50px;
+}
+
+.review h4,
+.our_team_block h4 {
+    color: #061e37;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.review p {
+    color: #78909c;
+    margin-bottom: 0;
+    width: 570px;
+}
+
+.reviews_right_half div:nth-child(3) {
+    margin-top: 70px
+}
+
+/*
+.review:first-child {
+    margin-top: 87px;
+    margin-bottom: 70px;
+}
+*/
+
+.reviews_arrows {
+    text-align: center;
+    }
+
+.reviews_arrows span {
+    font-size: 45px;
+}
+
+.reviews_arrows:first-child {
+    margin-top: 40px;
+    padding-top: 0;
+    height: 45px;
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+}
+
+.reviews_arrows:last-child {
+    margin-top: 10px;
+    padding-top: 0;
+    height: 45px;
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+}
+
+
+
+/* --- Our Team --- */
+
+.our_team_block {
+    text-align: center;
+}
+
+.employees_photo {
+    margin-bottom: 60px;
+}
+
+.employees_photo img:first-child,
+.employees_photo img:last-child {
+    position: relative;
+    bottom: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.employees_photo img:nth-child(2) {
+    border: 20px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.our_team_block h4 + p {
+    color: #90a4ae;
+    width: 660px;
+    margin-bottom: 30px;
+}
+
+.employees_contacts a {
+    color: #90a4ae;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 25px;
+    
+}
+
+.employees_contacts a:first-child {
+    margin-left: 0;
+}
+
+.employees_contacts {
+    margin-bottom: 90px;
+}
+
+
+
+/* --- Contact Us --- */
+
+.contact_us_block {
+    background-color: #fafafa;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #061e37;
+   /* border: 1px solid red; */
+}
+
+.contact_us_block h2 {
+    padding-top: 50px;
+}
+
+.contact_us_block h2 + p {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 600px;
+    line-height: 25px;
+}
+
+form {
+    display: inline-block;
+    width: 600px;
+}
+
+form input, 
+.users_message {
+    width: 280px;
+    height: 50px;
+    padding: 0 0 0 20px;
+    border: 1px solid rgb(6, 30, 55);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+form input:nth-child(1),
+form input:nth-child(3) {
+    margin-right: 35px;
+}
+
+.users_message {
+    width: 600px;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.after_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe_input form {
+    width: 800px;
+}
+
+.subscribing {
+    height: 20px;
+    display: flex;
+    border: 1px solid rgb(6, 30, 55); /* --- не работает --- */
+    position: relative;
+    top: 40px;
+    left: 140px;
+}
+
+.contact_us_block label {
+    font-weight: 500;
+    position: relative;
+    bottom: 20px;
+    right: -150px;
+}
+
+
+.contact_us_block .wrapper {
+    position: relative;
+}
+
+.send_bttn {
+    position: absolute; /* --- относительно wrapper --- */
+    top: 530px;
+    right: 420px;
+}
+
+
+
+/*  ---Подвал сайта---  */
+
+.footer {
+    background-color: #061e37;
+    color: #fff;
+    height: 300px;
+    padding-top: 50px; /*  +50px из .upper-footer > div = 100px  */
+    margin-top: ;
+    text-transform: capitalize;
+}
+
+.upper-footer .company-logo {
+    text-transform: uppercase;
+}
+
+.upper-footer a:hover {
+    color: #384b5f;
+}
+
+.down-footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+}
+
+.down-footer ul {
+    display: flex;
+    padding: 0;  /* выравнивание по левому краю */
+}
+
+.down-footer li {
+    margin-right: 45px;
+    padding-left: 25px;
+}
+
+.down-footer li:first-child {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.down-footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a .fa {
+    font-size: 30px;
+    color: #384b5f;
+    margin-right: 20px;
+}
+
+a .fa-behance {
+    margin-right: 0;
+    
+}
+
+
+
+/* --- clearfix --- */
+
+.clearfix {
+    clear: both;
+}
